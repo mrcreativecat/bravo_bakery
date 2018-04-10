@@ -13,7 +13,7 @@
             width: 1200px;
             height: 1000px;
             background-color: #E8C6A9;
-            position: absolute;
+            position: relative;
             margin: 0 auto;
         }
         header {
@@ -54,12 +54,12 @@
             left: 500px;
         }
         .open2{
+            width: 280px;
+            height: 60px;
+            text-align: left;
             font-size: 20pt;
             color: #E76B7C;
             font-weight: bold;
-        }
-        .open3{
-
         }
         .address {
             width: 280px;
@@ -116,5 +116,14 @@
         }
         .home{
             color: #FAEDBC;
+        }
+        a:visited{
+            color: #E76B7C;
+        }
+        a:hover{
+            color: #FAEDBC;
+        }
+        a:link{
+            color: #E76B7C;
         }
     </style>
