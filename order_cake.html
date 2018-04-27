@@ -1,1 +1,115 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Cake (Birthday)- Bravo! Caf&eacute; and Bakery</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="logo"><img src="images/logo.png" height="120px;"></div>
+        <div class="open">
+            <div class="open2">
+                <p>We're still open!</p><br>
+            </div><!--End of open2-->
+            <div class="open3"><a href="more_info.html"><p>See Full Hours</p></a>
+            </div><!--End of open3-->
+        </div><!--End of open-->
+        <div class="address">
+            <p>1106 Grand Ave.</p>
+            <p>St. Paul, MN 55105</p><br>
+            <p><b>651-287-9118</b></p>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html"><button class="home">Home</button></a>
+        <a href="order_cake.html"><button class="dropdown">Order Cake
+            <div class="dropdown-content">
+                <p>Birthday</p>
+                <p>Graduation</p>
+                <p>Kid</p>
+                <p>Baby Shower</p>
+                <p>Special</p>
+                <p>Eggless</p>
+                <p>Cheesecake</p>
+                <p>Wedding</p>
+            </div></button></a>
+        <a href="menu.html"><button class="menu">Menu</button></a>
+        <a href="about_us.html"><button class="about">About Us</button></a>
+        <a href="more_info.html"><button class="more">More Info</button></a>
+        <button class="news">News</button>
+    </nav>
+    <div class="slideshow-container">
+        <div class="cakes">
+            <img id="cake1" src="images/cake1.jpg">
+            <img id="cake2" src="images/cake2.jpg">
+            <img id="cake3" src="images/cake3.jpg">
+            <img id="cake4" src="images/cake4.jpg">
+        </div>
+        <div class="form_container">
+            <div id="bday">Birthday Cake</div>
+            <form>
+                <div class="input_title">Full name:</div>
+            <input class="input" type="text"><br><br>
+                <div class="input_title">E-mail address:</div>
+            <input class="input" type="text"><br><br>
+                    <div class="input_title">Phone number (Format: 123-456-7890):</div>
+            <input class="input" type="text"><br><br>
+                        <div class="input_title">Pickup date (Format: Month/Day/Year):</div>
+            <input class="input" type="text"><br><br>
+                            <div class="input_title">Size and Type (Format: Flavor - Size - Price):</div>
+            <select  class="input" name="size">
+                <option value="eight_durian">Durian - 8&quot; circle – $34</option>
+                <option value="ten_durian">Durian - 10&quot; circle – $52</option>
+                <option value="twelve_durian">Durian - 12&quot; circle – $80</option>
+                <option value="fourteen_durian">Durian - 14&quot; circle – $102</option>
+                <option value="half_durian">Durian - Quarter sheet – $57</option>
+                <option value="half_durian">Durian - Half sheet – $103</option>
+                <option value="full_durian">Durian - Full sheet – $178</option>
+                <option value="eight_taro">Taro - 8&quot; circle – $30</option>
+                <option value="ten_taro">Taro - 10&quot; circle – $48</option>
+                <option value="twelve_taro">Taro - 12&quot; circle – $70</option>
+                <option value="fourteen_taro">Taro - 14&quot; circle – $95</option>
+                <option value="half_taro">Taro - Quarter sheet – $50</option>
+                <option value="half_taro">Taro - Half sheet – $95</option>
+                <option value="full_taro">Taro - Full sheet – $170</option>
+                <option value="eight_regular">Regular - 8&quot; circle – $26</option>
+                <option value="ten_regular">Regular - 10&quot; circle – $40</option>
+                <option value="twelve_regular">Regular - 12&quot; circle – $60</option>
+                <option value="fourteen_regular">Regular - 14&quot; circle – $80</option>
+                <option value="half_regular">Regular - Quarter sheet – $40</option>
+                <option value="half_regular">Regular - Half sheet – $80</option>
+                <option value="full_regular">Regular - Full sheet – $150</option>
+            </select><br><br>
+                                <div class="input_title">Flavor (If a "Regular" cake is chosen):</div>
+            <select  class="input" name="flavor">
+                <option value="vfc">Vanilla Fruit Cake</option>
+                <option value="mango">Mango Cake</option>
+                <option value="peach">Peach Cake</option>
+                <option value="pineapple">Pineapple Cake</option>
+                <option value="greenbean">Green Tea Red Bean Cake</option>
+                <option value="greenfruit">Green Tea Fruit Cake</option>
+                <option value="cwc">Chocolate Walnut Cake</option>
+                <option value="cfc">Chocolate Fruit Cake</option>
+                <option value="coffee">Mocha Walnut Cake</option>
+            </select><br><br>
+                                    <div class="input_title">Note to baker:</div>
+            <input class="input" type="text"><br><br>
+            <input class="form-submit-button" type="submit"><br><br>
+            </form>
+        </div><!--End of form container-->
+    </div><!--End of content-->
+    <footer>
+        <div id="facebook"><a href="https://www.facebook.com/Bravo-Bakery-115825201771709/" target="_blank"><img src="images/facebook.png" width="80px";></a></div>
+        <div id="yelp"><a href="https://www.yelp.com/biz/bravo-caf%C3%A9-and-bakery-saint-paul-2" target="_blank"><img src="images/yelp.png" width="80px";></a></div>
+        <div class="copyinfo">
+            <p>&copy; Bravo Caf&eacute; and Bakery 2018.</p><br>
+            <p>All rights reserved.</p>
+        </div>
+    </footer><!--End of footer-->
+</div><!--End of wrapper-->
+</body>
