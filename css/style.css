@@ -1,129 +1,448 @@
-<style>
-
-        * {
-            margin: 0 auto;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: #8B6F66;
-            font-family: 'Nunito Sans', sans-serif;
-            color: #8B6F66;
-        }
-        .wrapper {
-            width: 1200px;
-            height: 1000px;
-            background-color: #E8C6A9;
-            position: relative;
-            margin: 0 auto;
-        }
-        header {
-            width: 1180px;
-            height: 140px;
-            position: relative;
-        }
-        nav {
-            width: 1200px;
-            height: 60px;
-            position: relative;
-            margin: 0 auto;
-            margin-top: 10px;
-        }
-        button {
-            border-radius: 15px;
-            width: 176.5px;
-            height: 60px;
-            border: 0;
-            background-color: #8B6F66;
-            color: #F2C6A2;
-            margin: 0 10px 0 10px;
-            font-size: 20pt;
-        }
-        .logo {
-            width: 380px;
-            height: 120px;
-            float: left;
-            margin: 10px;
-            margin-left: 0;
-        }
-        .open {
-            width: 280px;
-            height: 120px;
-            text-align: left;
-            margin-top: 10px;
-            position: absolute;
-            left: 500px;
-        }
-        .open2{
-            width: 280px;
-            height: 60px;
-            text-align: left;
-            font-size: 20pt;
-            color: #E76B7C;
-            font-weight: bold;
-        }
-        .address {
-            width: 280px;
-            height: 120px;
-            text-align: left;
-            float: right;
-            margin: 10px;
-            margin-right: 0;
-        }
-        .content {
-            width: 1180px;
-            height: 500px;
-            margin: 10px;
-            margin-top: 20px;
-            position: relative;
-            background-color: aliceblue;
-        }
-        footer {
-            width: 1180px;
-            height: 100px;
-            margin: 10px;
-            margin-top: 20px;
-            position: relative;
-        }
-        .facebook{
-            margin: 10px;
-            margin-left: 200px;
-            position: relative;
-            display: inline-block;
-        }
-        .twitter{
-            margin: 10px;
-            margin-left: 20px;
-            position: relative;
-            display: inline-block;
-        }
-        .youtube{
-            margin: 10px;
-            margin-left: 400px;
-            position: relative;
-            display: inline-block;
-        }
-        .instagram{
-            margin: 10px;
-            margin-left: 20px;
-            position: relative;
-            display: inline-block;
-        }
-        .copyinfo{
-            text-align: center;
-            width: 380px;
-            justify-content: center;
-            display: inline-block;
-        }
-        .home{
-            color: #FAEDBC;
-        }
-        a:visited{
-            color: #E76B7C;
-        }
-        a:hover{
-            color: #FAEDBC;
-        }
-        a:link{
-            color: #E76B7C;
-        }
-    </style>
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body {
+    background-color: #8B6F66;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #8B6F66;
+}
+.wrapper {
+    width: 1200px;
+    height: 950px;
+    background-color: #E8C6A9;
+    position: relative;
+    margin: 0 auto;
+}
+header {
+    width: 1180px;
+    height: 140px;
+    position: relative;
+}
+nav {
+    width: 1200px;
+    height: 60px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+button {
+    border-radius: 15px;
+    width: 176.5px;
+    height: 60px;
+    border: 0;
+    background-color: #8B6F66;
+    color: #F2C6A2;
+    margin: 0 10px 0 10px;
+    font-size: 20pt;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #8B6F66;
+    color: #FAEDBC;
+}
+button:active{
+    background-color: #E76B7C;
+    color: #FAEDBC;
+}
+.logo {
+    width: 380px;
+    height: 120px;
+    float: left;
+    margin: 10px;
+    margin-left: 0;
+}
+.open {
+    width: 280px;
+    height: 120px;
+    text-align: left;
+    margin-top: 10px;
+    position: absolute;
+    left: 500px;
+}
+.open2{
+    width: 280px;
+    height: 60px;
+    text-align: left;
+    font-size: 20pt;
+    color: #E76B7C;
+    font-weight: bold;
+}
+.open3{
+    font-size: 20pt;
+}
+.address {
+    width: 280px;
+    height: 120px;
+    text-align: right;
+    float: right;
+    margin: 10px;
+    margin-right: 0;
+    font-size: 16pt;
+}
+footer {
+    width: 1180px;
+    height: 100px;
+    margin: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+#facebook{
+    margin-right: 20px;
+    position: relative;
+    float: left;
+    display: inline-block;
+}
+#yelp{
+    position: relative;
+    float: left;
+    display: inline-block;
+}
+.copyinfo{
+    text-align: right;
+    width: 380px;
+    float: right;
+    display: inline-block;
+}
+a:visited{
+    color: #E76B7C;
+}
+a:hover{
+    color: #FAEDBC;
+}
+a:link{
+    color: #E76B7C;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 5px;
+    background-color: #FAEDBC;
+    color: #8B6F66;
+    font-size: 14pt;
+    min-width: 152px;
+    padding: 10px;
+    z-index: 20;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.slideshow-container {
+    width: 1180px;
+    height: 600px;
+    margin: 10px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.currentslide{
+    width: 780px;
+    position: relative;
+    float: left;
+}
+.thumbnail1{
+    width: 380px;
+    float: right;
+    margin-bottom: 20px;
+}
+.thumbnail2{
+    width: 380px;
+    float: right;
+}
+.slideshow-container {
+    width: 1180px;
+    height: 600px;
+    margin: 10px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+#vegdishes{
+    width: 276.3px;
+    height: 190px;
+    position: relative;
+    margin-left: 0;
+    display: inline-block;
+    background-image: url("images/veggies_hover.png")
+}
+#vegdishes:hover{
+    background-image: url("images/veggies.jpg");
+    cursor: pointer;
+}
+#tofu{
+    width: 276.3px;
+    height: 190px;
+    position: relative;
+    margin-left: 20px;
+    display: inline-block;
+    background-image: url("images/tofu_hover.png");
+}
+#tofu:hover{
+    background-image: url("images/tofu.jpg");
+    cursor: pointer;
+}
+#beef{
+    width: 276.3px;
+    height: 190px;
+    position: relative;
+    margin-left: 20px;
+    display: inline-block;
+    background-image: url("images/beef_hover.png")
+}
+#beef:hover{
+    background-image: url("images/beef.jpg");
+    cursor: pointer;
+}
+#ribs{
+    width: 276.3px;
+    height: 190px;
+    position: relative;
+    margin-left: 20px;
+    display: inline-block;
+    background-image: url("images/ribs_hover.png");
+}
+#ribs:hover{
+    background-image: url("images/ribs.jpg");
+    cursor: pointer;
+}
+#fish{
+    width: 276.3px;
+    height: 190px;
+    position: relative;
+    margin-left: 0;
+    margin-top: 20px;
+    display: inline-block;
+    background-image: url("images/fish_hover.png");
+}
+#fish:hover{
+    background-image: url("images/fish.jpg");
+    cursor: pointer;
+}
+#chicken{
+    width: 276.3px;
+    height: 190px;
+    position: relative;
+    margin-left: 20px;
+    display: inline-block;
+    background-image: url("images/chicken_hover.png");
+}
+#chicken:hover{
+    background-image: url("images/chicken.jpg");
+    cursor: pointer;
+}
+#beverages{
+    width: 276.3px;
+    height: 190px;
+    position: relative;
+    margin-left: 20px;
+    display: inline-block;
+    background-image: url("images/beverages_hover.png")
+}
+#beverages:hover{
+    background-image: url("images/beverages.jpg");
+    cursor: pointer;
+}
+#extras{
+    width: 276.3px;
+    height: 190px;
+    position: relative;
+    margin-left: 20px;
+    display: inline-block;
+    background-image: url("images/extras_hover.png");
+}
+#extras:hover{
+    background-image: url("images/extras.jpg");
+    cursor: pointer;
+}
+#products{
+    width: 376.3px;
+    height: 190px;
+    position: relative;
+    margin-left: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-image: url("images/products_hover.png");
+}
+#products:hover{
+    background-image: url("images/products.png");
+    cursor: pointer;
+}
+#advanced{
+    width: 376.3px;
+    height: 190px;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-image: url("images/advanced_hover.png");
+}
+#advanced:hover{
+    background-image: url("images/advanced.jpg");
+    cursor: pointer;
+}
+#our_bakery{
+    width: 376.3px;
+    height: 190px;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-image: url("images/our_bakery_hover.png");
+}
+#our_bakery:hover{
+    background-image: url("images/our_bakery.jpg");
+    cursor: pointer;
+}
+#online_orders{
+    width: 376.3px;
+    height: 190px;
+    position: relative;
+    margin-left: 0;
+    display: inline-block;
+    background-image: url("images/online_hover.png");
+}
+#online_orders:hover{
+    background-image: url("images/online.jpg");
+    cursor: pointer;
+}
+#nutrition{
+    width: 376.3px;
+    height: 190px;
+    position: relative;
+    margin-left: 20px;
+    display: inline-block;
+    background-image: url("images/nutrition_hover.png");
+}
+#nutrition:hover{
+    background-image: url("images/nutrition.png");
+    cursor: pointer;
+}
+#vegetarian{
+    width: 376.3px;
+    height: 190px;
+    position: relative;
+    margin-left: 20px;
+    display: inline-block;
+    background-image: url("images/vegetarian_hover.png");
+}
+#vegetarian:hover{
+    background-image: url("images/vegetarian.jpeg");
+    cursor: pointer;
+}
+form{
+    float: right;
+    margin-top: -250px;
+}
+.form-submit-button{
+    background-color: #E76B7C;
+    color: #F2C6A2;
+    border: 0;
+    width: 380px;
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 15px;
+    font-size: 18pt;
+}
+.form-submit-button:hover{
+    background-color: #8B6F66;
+    color: #FAEDBC;
+    cursor: pointer;
+}
+.form-submit-button:active{
+    background-color: #8B6F66;
+    color: #FAEDBC;
+    cursor: pointer;
+}
+.input{
+    width: 376px;
+    height: 24px;
+    background-color: #FAEDBC;
+    border: 0;
+    margin-left: 30px;
+    position: relative;
+}
+.input:active{
+    background-color: white;
+}
+.input_title{
+    margin-left: 30px;
+}
+#cake1{
+    width: 376px;
+    position: relative;
+    margin-left: 0;
+}
+#cake2{
+    width: 376px;
+    position: absolute;
+    margin-left: 25px;
+}
+#cake3{
+    width: 376px;
+    position: absolute;
+    margin-left: -376px;
+    margin-top: 310px;
+}
+#cake4{
+    width: 376px;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 310px;
+}
+#clock{
+    width: 80px;
+    position: absolute;
+    margin-left: 800px;
+}
+#location{
+    width: 80px;
+    position: absolute;
+    margin-left: 0;
+}
+#map{
+    position: absolute;
+    margin-left: 400px;
+}
+#moreaddress{
+    font-size: 20pt;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 80px;
+}
+#morestores{
+    font-size: 16pt;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 140px;
+}
+#morehours{
+    font-size: 18pt;
+    position: absolute;
+    margin-left: 905px;
+    border-spacing: 10px;
+}
+#day{
+    font-weight: bold;
+    margin: 10pt;
+}
+#closed{
+    color: #E76B7C;
+}
+#cakenote{
+    font-size: 7pt;
+}
+#bday{
+    position: absolute;
+    font-size: 22pt;
+    font-family: Lobster;
+    color: #E76B7C;
+    margin-left: 800px;
+    margin-top: -295px;
+}
